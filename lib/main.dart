@@ -1,44 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:tugas_ui/screens/welcome_screen.dart';
 
-void main() => runApp(const VokasiApp());
+void main() {
+  runApp(const MyApp());
+}
 
-class VokasiApp extends StatelessWidget {
-  const VokasiApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Material App',
-      home: Scaffold(
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Image.asset('assets/vokasi_logo-white.png'),
-              const SizedBox(
-                height: 25,
-              ),
-              Text(
-                'Sekolah Vokasi',
-                style: GoogleFonts.poppins(
-                    fontSize: 28,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white),
-              ),
-              Text(
-                'Unggul, Mandiri & Berkarakter',
-                style: GoogleFonts.poppins(
-                    fontSize: 12,
-                    fontWeight: FontWeight.w400,
-                    color: Colors.white),
-              ),
-            ],
-          ),
-        ),
-      ),
-      theme: ThemeData(scaffoldBackgroundColor: const Color(0xffEE8301)),
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
+      title: 'Flutter Demo',
+      home: WelcomeScreen(),
     );
   }
 }
