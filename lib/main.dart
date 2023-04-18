@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:tugas_ui/screens/register_screen.dart';
+import 'package:tugas_ui/screens/register_screen_2.dart';
 import 'package:tugas_ui/screens/welcome_screen.dart';
 
 void main() {
@@ -13,7 +15,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: WelcomeScreen(),
+      home: Register(),
     );
   }
 }
